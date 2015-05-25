@@ -1,5 +1,12 @@
+require "faraday"
+require "nokogiri"
+require "json"
+
 require "xe/version"
+require "xe/currency"
+require "xe/url"
 
 module XE
-  # Your code goes here...
+  class Convert
+  end
 end
