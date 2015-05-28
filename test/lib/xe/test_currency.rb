@@ -1,4 +1,5 @@
 require_relative "../../test_helper"
+require "xe/currency"
 
 class CurrencyTest < Minitest::Test
   def test_extraction_of_individual_currency

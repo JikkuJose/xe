@@ -7,9 +7,10 @@ class ConvertTest < Minitest::Test
   end
 
   def test_conversion
-    skip
-    currency_symbols = [:usd, :aed, :inr]
-    currencies = XE::Convert.among(currency_symbols)
-    assert_equal 3, currencies.count
+    currency_symbols = [:aed, :inr]
+    VCR.use_cassette("usd_to_aed") do
+      conversions = XE::Convert.among(currency_symbols)
+      assert_equal 1, conversions.count
+    end
   end
 end
