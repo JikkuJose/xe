@@ -16,7 +16,7 @@ To get a list of conversions:
 
 The `to_s` method in the conversion object prints a greppable output:
 
-    converstions.each { |c| puts c }
+    conversions.each { |c| puts c }
     # =>
     # 1 USD = 3.7 AED
     # 1 AED = 0.27 USD
